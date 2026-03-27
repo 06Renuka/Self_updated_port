@@ -2,7 +2,7 @@
 
 A production-ready personal portfolio website with a full blog management system. Built with React + Vite, deployed on Vercel.
 
-**Live Demo:** https://renuka-portfolio.vercel.app
+**Live Demo:** https://self-updated-port.vercel.app/
 **Admin credentials:** `admin` / `portfolio2025`
 
 ---
