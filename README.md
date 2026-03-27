@@ -21,8 +21,8 @@ React 18 · Vite · React Router v6 · Context API · localStorage · Lucide Rea
 ## Run Locally
 
 ```bash
-git clone https://github.com/06Renuka/Works_AI.git
-cd Works_AI
+git clone https://github.com/06Renuka/Self_updated_port.git
+cd Self_updated_port 
 npm install --legacy-peer-deps
 npm run dev
 ```
