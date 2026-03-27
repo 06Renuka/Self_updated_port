@@ -1,0 +1,105 @@
+/* src/pages/Blog.css */
+.blog-header {
+  padding: 4rem 0 3rem;
+  max-width: 600px;
+}
+.blog-subtitle {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.blog-empty {
+  padding: 4rem 0;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--border);
+  padding-bottom: 5rem;
+}
+
+.blog-item {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 2.5rem;
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+  opacity: 0;
+  animation-fill-mode: forwards;
+  transition: background var(--transition);
+}
+
+.blog-item__left {
+  padding-top: 0.25rem;
+}
+
+.blog-item__date {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--text-dim);
+}
+
+.blog-item__tags {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.blog-item__title-link { display: block; }
+.blog-item__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.75rem;
+  transition: color var(--transition);
+}
+.blog-item__title-link:hover .blog-item__title { color: var(--accent); }
+
+.blog-item__excerpt {
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+  max-width: 620px;
+}
+
+.blog-item__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-item__read-time {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-dim);
+}
+
+.blog-item__read-more {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  transition: gap var(--transition);
+}
+.blog-item__read-more:hover { gap: 0.6rem; }
+
+@media (max-width: 640px) {
+  .blog-item {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
